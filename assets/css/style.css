@@ -354,3 +354,109 @@ text-transform: capitalize;
 
 
 /* end services section */
+/*--------------------------------------------------------------
+# career section
+--------------------------------------------------------------*/
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  
+}
+.section-title h2{
+ font-size: 28px;
+ color: rgb(128, 126, 126);
+
+}
+
+
+
+.section-title h5{
+    color: rgb(151, 150, 150);
+    font-family: Metropolis Extra Light;
+    font-size:23px;
+}
+
+
+.career-item a{
+    color:#a5caec
+}
+
+.career-item{
+  
+    width: 70%;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 54px 0 rgb(0 0 0 / 6%);
+    padding: 15px;
+
+    margin: auto;
+    margin-bottom: 40px;
+}
+.career-item:hover{
+    border: #a5caec 2px solid;
+}
+.career-item .career-desc{
+  
+    color: #666;
+    font-family: Metropolis Extra Light;
+    font-size: 18px;
+    letter-spacing: 0;
+ 
+    margin-top: 10px;
+}
+
+
+.career-location{
+    width: 131px;
+    color: #666;
+    font-family: Metropolis Extra Light;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 14px;
+    margin-top: 10px;
+}
+
+ .career-item .career-title{
+    color: #2f87da;
+    font-family: Metropolis Bold;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 28px;
+
+}
+.career-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.career-footer .more{
+color: #2f87da;
+width: 90px;
+height: 30px;
+font-size: 16px;
+font-weight: 200;
+background-color: #fff;
+border: 1px solid #fff;
+cursor: pointer;
+
+}
+ .career-footer .more i{
+    padding-left: 10px;
+
+}
+
+
+
+/*****************#end of careers ******************/
+.form-group label{
+    color: #2f87da;
+    font-size: 21px;
+}
+.modal-email span {
+    color: #2f87da;
+    font-size: 15px;
+}
