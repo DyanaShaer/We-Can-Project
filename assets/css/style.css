@@ -1,10 +1,218 @@
+/*start public*/
 body{
   font-family: 'Roboto';
+  height:1000px;
 }
 @font-face{
     src:url(..Roboto/Roboto-Thin.ttf);
     font-family: 'Roboto', sans-serif;
 }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list-item{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+}
+/*end public*/
+/* start Navbar & Header Section */
+/*nav*/
+.nav{
+    padding-left: 150px;
+    position:sticky;
+     width: 100%;
+     z-index:999;
+ }
+ .nav .logo img{
+     width: 200px;
+     height: auto;
+ }
+ .nav .fa-bars{
+     font-size: 30px;
+     display: none;
+     color:#fff;
+     margin-top:30px;
+ }
+ .nav  .list-item {
+     max-width: 580px;
+     display: flex;
+     justify-content: space-between;
+     margin:20px 200px;
+     flex-grow: 1;}
+ 
+     .nav .list-item .item{
+     margin-top: 13px;
+     display: flex;
+     flex-flow: row nowrap;
+ }
+ nav .list-item  .item a{
+     font-family:Metropolis Extra Light;
+     color:#fff;
+     font-size: 17px;
+     font-weight:600;
+     letter-spacing: 0;
+     background-image: linear-gradient(to right, #fff 50%, #fff 50%);
+     background-size: 200% 100%;
+     background-position: -100%;
+     display: inline-block;
+     padding: 5px 0;
+     position: relative;
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ 
+ nav .list-item  .item a:before {
+     content: '';
+     background: #fff;
+     display: block;
+     position: absolute;
+     bottom: -3px;
+     left: 0;
+     width: 0;
+     height: 3px;
+     transition: all 0.3s ease-in-out;
+ }
+ nav .list-item  .item a:hover {
+     background-position: 0;
+ }
+ nav .list-item  .item a:hover::before {
+     width: 100%;
+ }
+ 
+ /*end nav*/
+ 
+ /*header*/
+ .home-header{
+     background-image: url(../img/header.jpg);
+     height:100vh;
+     background-size: cover;
+     text-align: center;
+     background-color: rgba(0,0,0,.3);
+     z-index: 100; }
+ header .content{
+     width: 100%;
+     margin-top:150px;
+ }
+ header .content .empowering-operators{
+     font-family:Metropolis Extra Light;
+     color: #fff;
+     font-weight: 700;
+     font-size: 3rem;
+     line-height: 67px;
+     text-align: center;
+ }
+ header .content p{
+     font-family:Metropolis Extra Light;
+     font-size: 24px;
+     line-height: 40px;
+     text-align: center;
+     color: #fff;
+     margin-top: 40px;
+ }
+ header .content .our-services{
+     border-radius: 6px;
+     font-weight: 700;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background:#fff;
+     width:221px;
+     height:72px;
+     font-size:18px;
+     color: #439dd5;
+     margin: 40px auto;
+     font-family:Metropolis Extra Light;
+ 
+ }
+ 
+ header .content .our-services:hover{
+     color:#fff;
+     background:#439dd5;
+ }
+ /*end header*/
+ 
+ /* media query */
+ @media(max-width: 600px){
+     header .content .empowering-operators {
+         font-size:30px;
+     }
+     header .content p{
+        margin-left: 10px;
+        margin-right: 10px;
+         font-size: 16px;
+     }
+     header .content{
+         background-position: 0 -50px;
+         margin-top:100px;}
+         .nav{
+            padding-left: 10px;}
+     .nav .logo {
+         width:70%;
+         margin-left:0px;
+     }
+     header .content .our-services{
+      margin-top:20px;
+ 
+     }
+     .nav  .fa-bars{
+         display:block;
+     }
+    .nav  .fa-bars:hover{
+         cursor: pointer;
+     }
+     .nav .list-item {
+         display: block;
+         height: auto;
+         position:absolute;
+         top:70px;
+         right:0px;
+         background-color: rgba(97, 155, 185, 0.9);
+         width:60%;
+         opacity:0;
+         transition:0.5s;
+         padding-left: 10px;
+         margin: 0px;
+       }
+     .nav .list-item  .item {
+         margin-bottom:20px;
+         margin-top: 10px;
+     }
+     .nav .list-item  .item a:hover{
+         background-position: 7% 30%, 40% bottom;}
+           
+         .nav .fa-bars:hover + .list-item{
+             opacity: 1;
+         }
+         
+ }
+ @media(min-width: 600px) and (max-width:1114px){
+    
+     .nav .logo {
+         width: 40%;
+     }
+     .nav .list-item{
+        margin:0;
+     }
+     .nav{
+        padding:0;
+     }
+     nav .list-item  .item a {
+         padding: 15px 15px 20px 20px;
+         font-size:20px;
+     }
+     .home-header{
+         height:80vh; }
+ }
+ /* end media query */
+/*end Navbar &Header Section */
+
 /* start services section */
 
 .title-services{
