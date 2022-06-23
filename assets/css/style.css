@@ -41,20 +41,25 @@ a{
  .nav  .list-item {
      max-width: 580px;
      display: flex;
-     justify-content: space-between;
-     margin:20px 200px;
-     flex-grow: 1;}
+     justify-content:space-between;
+     margin-top:20px;
+     flex-grow: 1;
+     margin-left: auto;
+     margin-right: 50px;
+}
  
      .nav .list-item .item{
      margin-top: 13px;
      display: flex;
      flex-flow: row nowrap;
+     margin-right: auto;
+     
  }
  nav .list-item  .item a{
      font-family:Metropolis Extra Light;
      color:#fff;
-     font-size: 17px;
-     font-weight:600;
+     font-size: 21px;
+     font-weight:700;
      letter-spacing: 0;
      background-image: linear-gradient(to right, #fff 50%, #fff 50%);
      background-size: 200% 100%;
@@ -95,7 +100,8 @@ a{
      background-size: cover;
      text-align: center;
      background-color: rgba(0,0,0,.3);
-     z-index: 100; }
+     z-index: 100; 
+    }
  header .content{
      width: 100%;
      margin-top:150px;
@@ -214,6 +220,9 @@ a{
 /*end Navbar &Header Section */
 
 /* start services section */
+.services{
+background-color: #fafafa;
+}
 
 .title-services{
     font-size: 37px;
@@ -221,13 +230,15 @@ a{
     text-transform: capitalize;
     color: #373737;
     text-align: center;
-    
+    margin-top: 48px;
 }
 .description-services{
     font-size: 23px;
     font-weight: 500;
     color: #7d7d7d;
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 .desc-span{
     text-transform: capitalize;
@@ -355,8 +366,62 @@ text-transform: capitalize;
 
 /* end services section */
 /*--------------------------------------------------------------
-# career section
---------------------------------------------------------------*/
+/* start clients section */
+
+
+.head2{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: #373737;
+}
+
+.clintt,.sec2{
+   background-color:#fafafa ; 
+}
+
+
+
+.ctitl{
+    color: #373737;
+    font-family: Metropolis Bold,serif;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+}
+
+
+.section-description{
+    color: #7d7d7d;
+    font-family: Metropolis Regular,serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.imgg{
+width: 8%;
+margin-left: 32%;
+
+}
+
+.crdimg{
+    height: 350px;
+   
+}
+.crdd{
+    height: 600px;
+}
+.cr2{
+    height: 300px;
+}
+
+/* end client section */
+/* --------------------------------------------------------------
+# career section */
 
 .section-title {
     text-align: center;
@@ -364,17 +429,19 @@ text-transform: capitalize;
   
 }
 .section-title h2{
- font-size: 28px;
- color: rgb(128, 126, 126);
-
+ color:#373737;
+ font-size: 37px;
+ font-weight: 650;
+ margin-bottom: 15px;
 }
 
 
 
 .section-title h5{
-    color: rgb(151, 150, 150);
+    color:#373737;
+    font-weight: 500;
     font-family: Metropolis Extra Light;
-    font-size:23px;
+    font-size:25px;
 }
 
 
@@ -389,7 +456,6 @@ text-transform: capitalize;
     background-color: #fff;
     box-shadow: 0 0 54px 0 rgb(0 0 0 / 6%);
     padding: 15px;
-
     margin: auto;
     margin-bottom: 40px;
 }
@@ -460,3 +526,96 @@ cursor: pointer;
     color: #2f87da;
     font-size: 15px;
 }
+
+
+/*start about Section */
+.about-us{
+    background-image: url(../img/about-us.png);
+    background-size: cover;
+    background-position: 0 -200px;
+    margin-top: 50px;
+}
+.aboutus{
+    margin: auto;
+    padding-bottom: 20px;
+    font-family:Metropolis Extra Light;
+    max-width: 1128px;
+   }
+.aboutus h2{
+    font-size: 37px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:#373737;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;     
+}
+.aboutus p{
+    font-size: 23px;
+    font-weight: 500;
+    color: #7d7d7d;
+}
+/*end about Section */
+
+/*start Footer Section */
+
+footer{
+    background-color:#12355d;
+color:#fff;
+font-family: Metropolis Extra Light;
+height: 400px;
+padding: 100px;}
+footer .container .row .logo img{
+    width: 200px;
+    height: auto;
+}
+footer .container .row .col-md-6 .social-network{
+ display:flex ;
+ list-style-type:none;
+ justify-content: space-between;
+    width: 170px;
+    font-size: 30px;
+    margin-left: 180px;
+}
+footer .container .row .col-md-6:not(:first-child){
+   text-align: center;
+
+}
+footer .container .row .col-md-6 .social-network li a i {
+color:#fff;
+}
+footer >.container .row:not(:first-child) {
+    border-top: 1px solid #ccc;
+}
+footer .container .row .copy p{
+    margin-left:200px;
+    margin-top: 30px;
+}
+ /* media query */
+ @media(max-width: 600px){
+    .aboutus p{
+        font-size: 20px;
+        margin: 50px;
+    }
+        footer{
+            height: 1000px;
+        }
+        footer .container .row .col-md-6 .social-network,footer .container .row .copy p{
+            margin-left: 0px;
+        }
+}
+@media(min-width: 600px) and (max-width:1114px){
+    .aboutus p{
+        margin: 50px;
+    }
+    footer{
+        height: 600px;
+    }
+
+footer .container .row .copy p,footer .container .row .col-md-6 .social-network{
+    margin-left: 0px;
+}
+
+}
+/* end media query */
+/* end Footer Section */
