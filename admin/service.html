@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-service.css">
+    
+
+</head>
+<body>
+ <!-- start navbar Section-->
+      <!--navbar-->
+      <nav class="nav">
+        <div class="logo">
+            <img src="assets/img/WeCan.png" alt="WeCan"/>
+        </div>
+      <i class="fa-solid fa-bars"></i>
+        <ul class="list-item">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="service.html">Services</a></li>
+            <li class="item"><a href="#">Clients</a></li>
+            <li class="item"><a href="#">Careers</a></li>
+        </ul>
+
+</nav>
+<!-- end navbar  Section-->
+
+ <!-- start crud services -->
+    <div class="addService">
+      <div class="container">
+        <h1>service system</h1>
+        <label for="" >service name</label>
+        <input type="text" id="serviceName" class="inputs form-control" placeholder="service name">
+        <div id="nameAlert" class="alert alert-danger text-start d-none">Please start with capital letter and don't exceed twenty fife letters</div>
+        <label for="" >service description</label>
+        <textarea   type="text" id="serviceDescription" class="inputs form-control" placeholder="service description"></textarea>
+        <div id="descriptionAlert" class="alert alert-danger text-start d-none">Please start with capital letter and write between 50-180 letters</div>
+        <label for="" >service image</label>
+        <input type="file" id="serviceImage" class="inputs form-control" placeholder="service image" accept="image/jpeg, image/png, image/jpg"  >
+        <div id="imagee" class="d-none" >   </div> 
+        <button id="click" class="btn btn-outline-info mt-3 " disabled>add service</button>
+        <button class="btn btn-outline-secondary mt-3 " id="clrBtn">clear</button>
+      </div>
+      <input class="search form-control my-3" id="search" placeholder="search" onkeyup="search(this.value)">
+     
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>description</th>
+            <th>image</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <button class="btn btn-outline-danger text-center  my-3 px-3" id="deleteBtn" >delete all</button>
+        <tbody id="data">
+
+        </tbody>
+      </table>
+    </div>
+ <!-- end crud services -->
+
+ <!--start Footer Section-->
+   
+ <footer >  
+  <div class="footer">
+    <p class="text-center"> WeCan &copy; All Rights Reserved 2022. </p>  
+  </div>
+ </footer> 
+     <!--end Footer Section -->
+
+<!-- javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.min.js" integrity="sha512-F3F53+tMh/CBxMQ60GN5R4EiFW7PcuND+9IDC3Qpkwc7SfxgzHigRdUO3+2+mNal2ot3Wp6KR0zx8r8BbsW+Bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script-service.js"></script>
+
+</body>
+</html>
