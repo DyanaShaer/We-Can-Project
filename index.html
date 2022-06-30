@@ -26,16 +26,47 @@
    <!-- start navbar & Header Section-->
     <div class="home-header">
       <!--navbar-->
-      <nav class="nav">
+      <nav class="nav" id="nav" >
                   <div class="logo">
                       <img src="assets/img/WeCan.png" alt="WeCan"/>
                   </div>
                 <i class="fa-solid fa-bars"></i>
-                  <ul class="list-item ">
+                  <ul class="list-item " id="listitem">
                       <li class="item"><a href="#">Home</a></li>
                       <li class="item"><a href="#">About Us</a></li>
                       <li class="item"><a href="#">Careers</a></li>
                       <li class="item"><a href="#">Contact Us</a></li>
+                      <li class="item text-capitalize"><a href="weather page/index.html">today's weather</a></li>
+                      <li class="dropdown" id="dropdown" >
+                      </li>
+                      <li class="loginBtn" id="loginForm"> <a type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="loginButton">Login</a>  
+                        <div class="modal fade bttnmodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login into WeCan</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="" class="col-form-label">Email :</label>
+                                    <input type="text" class="form-control" id="emailLogin" placeholder="Inter Your Email">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="" class="col-form-label">Password :</label>
+                                    <input type="text" class="form-control" placeholder="Inter Your Password" id="passwordLogin">
+                      
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="loginModal" >Login</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div ></li>
                   </ul>
       
       </nav>
@@ -362,7 +393,8 @@ Restaurant industry experience</li>
 
     <!-- javascript -->
     
-  <script src="assets/js/script-service.js"></script>
+  <script src="assets/js/service.js"></script>
+  <script src="assets/js/admin.js" ></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -218,7 +218,7 @@ serviceName.onkeyup = function(){
   }
 }
 serviceDescription.onkeyup = function(){
-  var descriptionPattern=/^[A-Z][a-z- & A-Z]{25,180}$/;
+  var descriptionPattern=/^[A-Z][a-z- & , . < > _ A-Z 0-9 ']{48,180}$/;
   if(descriptionPattern.test(serviceDescription.value)){
     addBtn.removeAttribute("disabled");
     serviceDescription.classList.add("is-valid");

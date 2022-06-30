@@ -24,7 +24,6 @@ a{
 /*nav*/
 .nav{
     padding-left: 150px;
-    position:sticky;
      width: 100%;
      z-index:999;
  }
@@ -39,7 +38,7 @@ a{
      margin-top:30px;
  }
  .nav  .list-item {
-     max-width: 580px;
+     max-width: 720px;
      display: flex;
      justify-content:space-between;
      margin-top:20px;
@@ -55,10 +54,12 @@ a{
      margin-right: auto;
      
  }
+ 
+
  nav .list-item  .item a{
      font-family:Metropolis Extra Light;
      color:#fff;
-     font-size: 21px;
+     font-size: 20px;
      font-weight:700;
      letter-spacing: 0;
      background-image: linear-gradient(to right, #fff 50%, #fff 50%);
@@ -90,6 +91,57 @@ a{
  nav .list-item  .item a:hover::before {
      width: 100%;
  }
+ 
+ .loginBtn{
+    margin-top: 13px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: auto;
+    
+}
+nav .list-item  .loginBtn a{
+    padding-left:15px ;
+ padding-right: 15px;
+ font-size: 19px;
+ font-weight: 500;
+}
+
+ /*  dropdown*/
+ .dropdown{
+    margin-top: 13px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: auto;
+    font-family:Metropolis Extra Light;
+    color:#fff;
+    font-size: 20px;
+    font-weight:400;
+    letter-spacing: 0;
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out;
+ }
+ .dropdown .dropdown-toggle {
+color:#fff !important;
+ }
+
+ nav .list-item  .dropdown a:before {
+    content: '';
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+ nav .list-item  .dropdown a:hover {
+    background-position: 0;
+}
+nav .list-item  .dropdown a:hover::before {
+    width: 100%;
+}
+ /* end dropdown*/
  
  /*end nav*/
  

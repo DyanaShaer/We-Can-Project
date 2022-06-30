@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta email="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-admin.css">
+    
+
+</head>
+<body>
+ <!-- start navbar Section-->
+      <!--navbar-->
+      <nav class="nav">
+        <div class="logo">
+            <img src="assets/img/WeCan.png" alt="WeCan"/>
+        </div>
+      <i class="fa-solid fa-bars"></i>
+      <ul class="list-item">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="#">Admin</a></li>
+        <li class="item"><a href="service.html">Services</a></li>
+        <li class="item"><a href="#">Clients</a></li>
+        <li class="item"><a href="#">Careers</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../index.html" >Home</a></li>
+            <li><a class="dropdown-item" href="../weather page/index.html">Today's weather</a></li>
+   </ul>
+        </li>
+        
+        
+
+    </ul>
+
+
+</nav>
+<!-- end navbar  Section-->
+
+ <!-- start admin admins -->
+ <div class="addAdmin">
+    <div class="container">
+      <h1>admin system</h1>
+      <label for="" >admin email</label>
+      <input type="text" id="adminEmail" class="inputs form-control" placeholder="please inter your email">
+      <div id="emailAlert" class="alert alert-danger text-start d-none">Please enter this format: @admin and write between 5-30 letters,symbols and numbers </div>
+      <label for="" >admin password</label>
+      <input type="text" id="adminPassword" class="inputs form-control" placeholder="please inter your password">
+      <div id="passwordAlert" class="alert alert-danger text-start d-none">Please enter between 8-30 letters,symbols and numbers.</div>
+      <button id="click" class="btn btn-outline-info mt-3 " disabled>add admin</button>
+      <button class="btn btn-outline-secondary mt-3 " id="clrBtn">clear</button>
+    </div>
+    <input class="search form-control my-3" id="search" placeholder="search" onkeyup="search(this.value)">
+   
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Email</th>
+          <th>Password</th>
+
+        </tr>
+      </thead>
+      <button class="btn btn-outline-danger text-center  my-3 px-3" id="deleteBtn" >delete all</button>
+      <tbody id="data">
+
+      </tbody>
+    </table>
+  </div>
+ <!-- end admin admins -->
+
+ <!--start Footer Section-->
+   
+ <footer >  
+  <div class="footer">
+    <p class="text-center"> WeCan &copy; All Rights Reserved 2022. </p>  
+  </div>
+ </footer> 
+     <!--end Footer Section -->
+
+<!-- javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.3/sweetalert2.min.js" integrity="sha512-F3F53+tMh/CBxMQ60GN5R4EiFW7PcuND+9IDC3Qpkwc7SfxgzHigRdUO3+2+mNal2ot3Wp6KR0zx8r8BbsW+Bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script-admin.js" ></script>
+</body>
+</html>

@@ -1,19 +1,18 @@
-/*start public*/
-body{
-  font-family: 'Roboto';
-  height:1000px;
-  overflow: hidden; /* Hide scrollbars */
-
-}
 @font-face{
     src:url(..Roboto/Roboto-Thin.ttf);
     font-family: 'Roboto', sans-serif;
 }
-
+body{
+    font-family: Roboto;
+}
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    margin: auto;
 }
 .list-item{
     list-style-type:none;
@@ -94,8 +93,8 @@ background-color:#12355d;
  nav .list-item  .item a:hover::before {
      width: 100%;
  }
-  /*  dropdown*/
-  .dropdown{
+   /*  dropdown*/
+   .dropdown{
     margin-top: 13px;
     display: flex;
     flex-flow: row nowrap;
@@ -191,115 +190,62 @@ nav .list-item  .dropdown a:hover::before {
  }
  /* end media query */
 /*end Navbar Section */
-/*start Cruds Section*/
-.cruds{
-    height:500px;
-    width: 65%;
+
+/* start crud admins  */
+.addAdmin{
+    text-align: center;
+    box-shadow: 5px 5px 21px #dcdcdc;
+    width: 80%;
     margin: auto;
-   }
-
-   .cruds .container{
-    padding-top:100px;
- }
- .row{
-    justify-content: space-between;
- }
-
-.cruds .container .row .services{
-    height:110px;
-    width: 400px;
-    margin-bottom: 10px;
-background-color: #dc694d;
-}
-.cruds .container .row .clients{
-    background-color: #5edc4d;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    height:110px;
-    width: 400px;
-}
-.cruds .container .row .careers{
-    background-color:  rgb(250, 250, 58);
-    height:110px;
-    width: 400px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-.cruds .container .row .admin{
-    background-color: #4fe0e5 ;
-    height:110px;
-    width: 400px;
-    margin-bottom: 10px;
+    margin-top: 40px;  
     
+}
+h1{
+font-weight: 600;
+margin-bottom: 30px;
 }
 
-.cruds .container .row .services h2,
-.cruds .container .row .clients h2,
-.cruds .container .row .careers h2,
-.cruds .container .row .admin h2{
-    
-    color:#fff;
-    font-size: 25px;
-    border-bottom:1px solid #ccc;
-}
-.cruds .container .row .services .crud-data,
-.cruds .container .row .clients .crud-data,
-.cruds .container .row .careers .crud-data,
-.cruds .container .row .admin .crud-data{
-    
-    padding-left: 10px;
-    color: #fff;
-}
-.cruds .container .row .services .crud-data a,
-.cruds .container .row .clients .crud-data a,
-.cruds .container .row .careers .crud-data a,
-.cruds .container .row .admin .crud-data a{
-    
-border-radius: 6px;
-border:#fff;
-    font-weight: 700;
-    justify-content: center;
-    margin-left:300px;
-    align-items: center;
-    background: #fff;
-    width: 60px;
-    height: 40px;
-    font-size: 18px;
-    color: #439dd5;
-    font-family: Metropolis Extra Light;}
-    .cruds .container .row .services .crud-data a:hover,
-.cruds .container .row .clients .crud-data a:hover,
-.cruds .container .row .careers .crud-data a:hover,
-.cruds .container .row .admin .crud-data a:hover{
-    
-    color:#fff;
-    background:#439dd5;}
-    @media(max-width: 600px){
+label{
+font-weight: 550;
+font-size: 17px;
 
-        .cruds .container .row .col-md-3{
-            margin-top:20px;
-        }
-        }
-        @media(min-width: 600px) and (max-width:1114px){
-            .cruds .container .row .services .crud-data a,
-            .cruds .container .row .clients .crud-data a,
-        .cruds .container .row .careers .crud-data a,
-        .cruds .container .row .admin .crud-data a{
-            
-                margin-left: 50px;
-            }
-        }
-/*end Cruds Section*/
+}
+
+
+#display-image{
+    width: 100px;
+    height: 80px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    
+  }
+
+  /* start media query */
+  
+  /* start media query */
+  @media(max-width:767px){
+    input,textarea{
+        margin-bottom: 20px;
+    }
+    tr{
+        padding: 0 !important;
+
+    }}
+    
+  /* end media query */
+
+/*  end admins section*/
 
 /*start Footer Section */
 
 footer{
-background-color:#12355d;
-color:#fff;
-font-family: Metropolis Extra Light;
-padding-bottom: 5px;
-padding-top: 5px;
-}
-
-/* end Footer Section */
+    background-color:#12355d;
+    color:#fff;
+    font-family: Metropolis Extra Light;
+    padding-bottom: 5px;
+    padding-top: 16px;
+    }
+    
+    /* end Footer Section */
 
