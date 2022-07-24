@@ -22,7 +22,7 @@ a{
 }
 /*end public*/
 
-/* start loading scroll */
+/* start loading screen */
 #loading{
 position: fixed;
 top: 0;
@@ -96,7 +96,7 @@ display: flex;
         } 
       }
 
-/* end loading scroll */
+/* end loading screen */
 
 /* start Navbar & Header Section */
 /*nav*/
